@@ -39,6 +39,7 @@ hexString bs =
   let isValidHex :: Word8 -> Bool
       isValidHex c
         | (48 <= c) && (c < 58)  = True
+        | (65 <= c) && (c < 91)  = True
         | (97 <= c) && (c < 103) = True
         | otherwise              = False
 
